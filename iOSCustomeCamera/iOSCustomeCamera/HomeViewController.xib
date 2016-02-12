@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="view" destination="QmX-Vv-ric" id="njR-0a-SE9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="QmX-Vv-ric">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hc-cz-F5W">
+                    <rect key="frame" x="256" y="285" width="88" height="30"/>
+                    <color key="backgroundColor" red="0.058823529409999999" green="0.51372549020000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="WEW-3S-zQv"/>
+                        <constraint firstAttribute="width" constant="88" id="eCR-wc-oke"/>
+                    </constraints>
+                    <state key="normal" title="Camera">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cameraButtonClicked:" destination="-1" eventType="touchUpInside" id="w6d-Wx-N3i"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8hc-cz-F5W" firstAttribute="centerY" secondItem="QmX-Vv-ric" secondAttribute="centerY" id="Ppe-xe-vGM"/>
+                <constraint firstItem="8hc-cz-F5W" firstAttribute="centerX" secondItem="QmX-Vv-ric" secondAttribute="centerX" id="gDx-sS-UfG"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
